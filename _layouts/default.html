@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <link rel="icon" href="{{ '/assets/img/icon.png' | relative_url }}">
+  <link rel="apple-touch-icon" href="{{ '/assets/img/icon.png' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="{{ '/' | relative_url }}">
+      <img src="{{ '/assets/img/icon.png' | relative_url }}" alt="" width="36" height="36">
+      <span>{{ site.title }}</span>
+    </a>
+    <nav>
+      <a href="{{ '/assistance' | relative_url }}">Assistance</a>
+      <a href="{{ '/confidentialite' | relative_url }}">Confidentialité</a>
+    </nav>
+  </header>
+  <main class="{{ page.class | default: 'doc' }}">
+    {{ content }}
+  </main>
+  <footer>
+    <p>© {{ 'now' | date: '%Y' }} François Guillon · <a href="{{ '/confidentialite' | relative_url }}">Confidentialité</a> · <a href="{{ '/assistance' | relative_url }}">Assistance</a></p>
+    <p class="muted">Simulation indicative et non contractuelle. Apple, iPhone et App Store sont des marques d'Apple Inc.</p>
+  </footer>
+</body>
+</html>

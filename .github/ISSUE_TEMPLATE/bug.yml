@@ -1,0 +1,24 @@
+name: Signaler un problème
+description: Un calcul qui semble faux, un écran qui ne s'affiche pas, un plantage.
+labels: [bug]
+body:
+  - type: textarea
+    id: probleme
+    attributes:
+      label: Que se passe-t-il ?
+      description: Ce que vous avez fait, ce que vous attendiez, ce que l'app a affiché. Une capture d'écran aide beaucoup. N'indiquez aucune donnée personnelle.
+    validations:
+      required: true
+  - type: input
+    id: appareil
+    attributes:
+      label: Appareil et iOS
+      placeholder: iPhone 17, iOS 27.1
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version de l'app
+      description: Réglages de l'app › Version
+      placeholder: "1.0"

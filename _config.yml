@@ -1,0 +1,9 @@
+title: Crédit Immo
+description: Simulateur de crédit immobilier pour iPhone, iPhone Duo et iPad. Capacité d'emprunt, coût du crédit, faisabilité bancaire, brut → net, rachat. Sans compte, sans publicité.
+lang: fr
+url: https://francoisgn.github.io
+baseurl: /ios-app_credit-immo-pub
+defaults:
+  - scope: { path: "" }
+    values: { layout: default }
+exclude: [README.md, SECURITY.md, LICENSE, .pre-commit-config.yaml]

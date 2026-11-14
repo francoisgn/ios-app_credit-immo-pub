@@ -1,0 +1,11 @@
+name: Question ou idée
+description: Une question sur l'app ou une suggestion d'amélioration.
+labels: [question]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Votre question ou votre idée
+      description: N'indiquez aucune donnée personnelle (revenus, nom, adresse…).
+    validations:
+      required: true
